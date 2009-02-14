@@ -1,0 +1,20 @@
+GenerallyUseful
+---------------
+Named as an homage to _SimplyHelpful_, **GenerallyUseful** is a collection of rake tasks that I find, well,
+generally useful in nearly every app I maintain. Each task file contains a related group of tasks
+and usually starts with an attribution to the source of the idea, code, etc.
+
+Nothing fancy, just _GenerallyUseful_.
+
+
+Credits
+-------
+* The Rails environment and original DB Utils tasks are adapted from [a post by/on Err The Blog](http://errtheblog.com/post/33 "Rake Around The Rosie"). Any flaws in their current state are likely due to my refactoring and extension of Err's originals.
+
+* The db:version command is a direct lift from the comments of [Doug Alcorn](http://blog.lathi.net/ "@Lathi.net") and [ncryptic](http://www.ncryptic.com/) on [a post in Jay Field's blog](http://blog.jayfields.com/2006/11/rails-get-schemainfo-version-number.html "Rails: Get the schema_info version number from Rake"). Darned handy, that.
+
+* The Rcov coverage tasks were originally adapted from [a post on Labrat's blog](http://blog.labratz.net/articles/2006/12/2/a-rake-task-for-rcov "A Rake Task for RCov") but have been so refactored as to be nearly unrecognizable. Again, all bugs are likely mine.
+
+Support
+-------
+Email me at jim a-t geekdaily d-o-t org with "GenerallyUseful" in the subject line. Priority support given to folks who add the word "ROCKS!" ;]

@@ -1,0 +1,9 @@
+**rev 18** / _13 Nov 2007_
+--------------------
+* Don't step on existing tasks (e.g. db:drop, db:create in Rails 2.0) but *do* make aliases for them (e.g. db:test:drop)
+* Changed db:drop to use the --force flag, eliminating prompts
+* Dropped the -r from MySQL database option as it horks mysqldump (and mysql is fine without it)
+* Added db:recycle and db:*:recycle tasks to drop, create, and migrate the database
+* Added db:list to list all databases served by the current environment's database adapter
+* Added Support section to README
+* Added CHANGELOG ;]

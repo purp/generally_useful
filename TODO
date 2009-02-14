@@ -1,0 +1,5 @@
+Interesting Tasks to Write
+==========================
+* Embrace rSpec goodness in coverage_via_rcov.rake (spec:coverage:full, et al)
+* Sync db from online (production) sources to local
+* Sync filetrees from online (production) sources to local (e.g. file_column data, configs, etc)
