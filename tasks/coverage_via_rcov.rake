@@ -6,7 +6,8 @@ begin
     desc "Aggregate code coverage for all tests"
     Rcov::RcovTask.new('coverage') do |t|
       t.libs << 'test'
-      t.test_files = FileList['test/{unit,integration,functional}/*_test.rb']
+      t.test_files = FileList['test/{unit,integration,functional}/*_test.rb', 'test/{unit,integration,functional}/*/*_test.rb']
+      t.output_dir = "test/coverage"
       t.verbose = true
       t.rcov_opts << '--rails --aggregate test/coverage.data'
     end
@@ -21,7 +22,7 @@ begin
       desc "Aggregate code coverage for all tests with HTML output"
       Rcov::RcovTask.new('html') do |t|
         t.libs << 'test'
-        t.test_files = FileList['test/{unit,integration,functional}/*_test.rb']
+        t.test_files = FileList['test/{unit,integration,functional}/*_test.rb', 'test/{unit,integration,functional}/*/*_test.rb']
         t.output_dir = "test/coverage"
         t.verbose = true
         t.rcov_opts << '--rails --aggregate test/coverage.data'
